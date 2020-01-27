@@ -3,11 +3,16 @@
 //
 
 #include <stdio.h>
-
-int main() {
-    int a=0;
-    printf("Hello, World C!\n");
-    printf("Hello, World Second C!\n");
-    printf("Value of A = %d",a);
+void printxy(int x, int y){
+    int *ptr;
+    x=0;
+    ptr = &x;
+    y = *ptr;
+    *ptr = 1;
+    printf("%d\t%d",x,y);
+}
+main() {
+      printxy(1,1);
     return 0;
 }
+

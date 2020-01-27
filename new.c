@@ -3,16 +3,12 @@
 //
 
 #include <stdio.h>
-void printxy(int x, int y){
-    int *ptr;
-    x=0;
-    ptr = &x;
-    y = *ptr;
-    *ptr = 1;
-    printf("%d\t%d",x,y);
-}
+#include<string.h>
+
 main() {
-      printxy(1,1);
+    char *c = "GATECSIT2020";
+    char *p=c;
+    printf("%d",(int)strlen((c+2[p]-6[p]-1)));
     return 0;
 }
 
